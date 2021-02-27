@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "242656136329",
+    "project_id": "project-map-253203",
+    "storage_bucket": "project-map-253203.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242656136329:android:9069af1627de7d03fc4a58",
+        "android_client_info": {
+          "package_name": "com.example.bodyfitness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "242656136329-s4gqtg17hfnkp41ntq7m1c5kndbril4m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYDSHP-zxJYxAhe_4uu0sTpXD9idHjfus"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "242656136329-s4gqtg17hfnkp41ntq7m1c5kndbril4m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

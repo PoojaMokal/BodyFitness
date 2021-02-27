@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:layout_marginTop="60dp"
+    android:layout_gravity="center"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/edit_email_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="6dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:id="@+id/edit_Password_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/passkey"
+            android:drawablePadding="6dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button1"
+            android:elevation="50dp"
+            android:ems="7"
+            android:onClick="loginBtn"
+            android:text="Login"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            />
+
+
+        <Button
+
+            android:id="@+id/register_btn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button1"
+            android:elevation="50dp"
+            android:ems="7"
+            android:text="Don't have account"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
