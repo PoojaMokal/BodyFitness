@@ -11,6 +11,7 @@ import com.google.firebase.auth.FirebaseUser
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
+
     private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,7 +38,7 @@ class LoginActivity : AppCompatActivity() {
     private fun updateUI(currentUser: FirebaseUser?) {
         if (currentUser != null) {
             if (currentUser.isEmailVerified) {
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, Bottom_navigation::class.java))
                 //finish()
             } else {
                 Toast.makeText(this, "Please verify email address.",
@@ -46,7 +47,7 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    fun loginBtn(view: View) {
+    fun loginToDashboard(view: View) {
         if (edit_email_login.text.toString().isEmpty()) {
             edit_email_login.error = "Please Enter Email"
             edit_email_login.requestFocus()
@@ -75,7 +76,6 @@ class LoginActivity : AppCompatActivity() {
                         updateUI(null)
                         // ...
                     }
-
                 }
 
     }
