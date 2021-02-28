@@ -19,18 +19,17 @@ class SignupActivity : AppCompatActivity() {
 
         auth = FirebaseAuth.getInstance()
 
-        button3.setOnClickListener {
+        login_btn.setOnClickListener {
           onBackPressed()
+        }
+
+        signUp_btn.setOnClickListener {
+            signUp()
         }
     }
 
     override fun onBackPressed() {
         super.onBackPressed()
-    }
-
-
-    fun registrationBtn(view: View) {
-        signUp()
     }
 
     private fun signUp() {

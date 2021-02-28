@@ -55,7 +55,7 @@
             android:background="@drawable/button1"
             android:elevation="50dp"
             android:ems="7"
-            android:onClick="loginBtn"
+            android:onClick="loginToDashboard"
             android:text="Login"
             android:textColor="#ffffff"
             android:textSize="25sp"
